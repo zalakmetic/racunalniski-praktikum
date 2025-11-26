@@ -13,4 +13,5 @@
 *.snm
 *.tex~    # backup files
 *.pdf
+visoska-kronika/prismojeni-repo/
 *~        # Emacs / editor backups
