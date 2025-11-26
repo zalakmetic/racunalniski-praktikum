@@ -4,7 +4,6 @@
 *.fls
 *.log
 *.synctex.gz
-# optional extras
 *.toc
 *.out
 *.lof
