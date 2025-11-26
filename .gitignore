@@ -17,23 +17,4 @@
 *.blg
 # macOS system files
 .DS_Store
-latex-test.aux
-latex-test.fdb_latexmk
-latex-test.fls
-latex-test.log
-latex-test.pdf
-latex-test.synctex.gz
-magic-resitev.pdf
-magic.aux
-magic.bbl
-magic.bib
-magic.blg
-magic.fdb_latexmk
-magic.fls
-magic.log
-magic.pdf
-magic.synctex.gz
-magic.tex
-magic.toc
-slika.pdf
 *~        # Emacs / editor backups
