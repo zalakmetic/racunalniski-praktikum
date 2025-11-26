@@ -1,0 +1,16 @@
+# LaTeX temporary / auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+# optional extras
+*.toc
+*.out
+*.lof
+*.lot
+*.nav
+*.snm
+*.tex~    # backup files
+*.pdf
+*~        # Emacs / editor backups
