@@ -10,7 +10,7 @@
 *.lot
 *.nav
 *.snm
-*.tex~    # backup files
+*.tex~   
 *.pdf
 *.aux
 # macOS system files
