@@ -13,4 +13,6 @@
 *.snm
 *.tex~    # backup files
 *.pdf
+*.aux
+.DS_Store
 *~        # Emacs / editor backups
