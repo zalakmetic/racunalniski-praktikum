@@ -3,6 +3,9 @@
 *.fdb_latexmk
 *.fls
 *.log
+*.pdf
+*.fdb-latexmk
+*.toc
 *.synctex.gz
 *.toc
 *.out
