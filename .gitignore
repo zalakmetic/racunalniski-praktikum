@@ -14,5 +14,6 @@
 *.tex~    # backup files
 *.pdf
 *.aux
+# macOS system files
 .DS_Store
 *~        # Emacs / editor backups
