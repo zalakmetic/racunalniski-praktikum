@@ -1,0 +1,40 @@
+Vrstice lahko pretvorite v tabelo v Excelu takole:
+- vrstice kopirate v list,
+- vrstice označite,
+- izberete ukaz Data -> Text to Columns
+
+
+Obresti
+------------------------------------------
+
+Leto; Stanje
+1972; 123,43
+
+
+Barva
+------------------------------------------
+
+Širina sobe; 4,15
+Dolžina sobe; 3,3
+Višina sobe; 2,65
+Količina barve za m2; 0,5
+Cena barve za kg; 1,1
+
+
+Padavine
+------------------------------------------
+
+Mesec; jan; feb; mar; apr; maj; jun;
+Padavine; 120; 45; 60; 210; 160; 35;
+Delež
+
+Mesec; jul; avg; sep; okt; nov; dec
+Padavine; 20; 80; 100; 120; 90; 200
+Delež
+
+Letna količina
+Največja mesečna količina
+Najmanjša mesečna količina
+Povprečna mesečna količina
+
+
