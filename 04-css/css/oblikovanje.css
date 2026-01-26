@@ -52,6 +52,8 @@ h2 {
     font-size: 0.9em;
     width: 40%;
     text-align: left;
+    float: right;
+    margin-left: 2em;
 }
 .slika p:last-child {
     font-size: 0.8em;
