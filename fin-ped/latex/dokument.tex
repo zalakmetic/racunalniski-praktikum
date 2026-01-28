@@ -8,11 +8,20 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
+\theoremstyle{definition}
+\newtheorem{definicija}{Definicija}
 
-\newcommand{\sinxinv}{}
+\newcommand{\sinxinv}{\sin\frac{1}{x}}
+
+\title{Varšavski lok}
+\author{Karol Borsuk}
+\date{20.~januar~2026}
 
 \begin{document}
 \thispagestyle{empty}
+
+
+\maketitle
 
 % 1. naloga:
 % Varšavski lok
@@ -27,20 +36,23 @@ tudi \emph{varšavski lok}, ki ga definiramo takole.
 
 % 3. naloga: 
 % začetek definicije
+\begin{definicija}
   Varšavski lok $L$ je topološki podprostor ravnine, definiran s predpisom
   \begin{equation*}
     L \mathrel{{:}{=}} \left\{ \left(x, \sinxinv \right) \mid x \in (0,1]\} \cup \{(0,0) \right\}.
   \end{equation*}
+\end{definicija}
 % konec definicije
 
 % 6. naloga: 
-Na sliki~!! vidimo graf funkcije $y = \sinxinv$ na polodprtem intervalu $(0,1]$.
+Na sliki \ref{fig:sin-1-x} vidimo graf funkcije $y = \sinxinv$ na polodprtem intervalu $(0,1]$.
 Če grafu dodamo še izhodišče~$(0,0)$, dobimo varšavki lok.
 % 
 \begin{figure}[ht]
   \centering
-
+  \includegraphics{warsaw.pdf}
   \label{fig:sin-1-x}
+  \caption{Graf funkcije je \(y = \sinxinv\)}
 \end{figure}
 %
 
@@ -50,19 +62,24 @@ Varšavski lok ima naslednje lastnosti:
 % 
 % začetek seznama
 % lastnost 1
-$L$ je povezan prostor, kar pomeni, da ga ne moremo ga razdeliti na disjunktni odprti neprazni množici.
+\begin{enumerate}
+  \item $L$ je povezan prostor, kar pomeni, da ga ne moremo ga razdeliti na disjunktni odprti neprazni množici.
 % 
 % lastnost 2
-$L$ ni s potmi povezan, saj točki $(0,0)$ in $(1, \sin 1)$ nista povezani
+  \item $L$ ni s potmi povezan, saj točki $(0,0)$ in $(1, \sin 1)$ nista povezani
   s potjo. To je, ne obstaja zvezna preslikava $\gamma : [0,1] \to L$, za katero
   velja $\gamma(0) = (0,0)$ in $\gamma(1) = (1, \sin 1)$.
 % lastnost 3
-$L$ ni lokalno kompakten, vendar je zvezna slika lokalno kompaktnega
+  \item $L$ ni lokalno kompakten, vendar je zvezna slika lokalno kompaktnega
   prostora $\{-1\} \cup (0,1]$ za preslikavo
   %
   \begin{align*}
     f &: \{-1\} \cup (0,1] \to L \\
     f &: x \mapsto
+    \begin{cases}
+      0        &\text{če je } x = -1,\\
+      \sinxinv  &\text{če je } 0 < x \leq 1.
+    \end{cases}
     % 2. naloga:
     %   0         \text{če je } x = -1,
     %   \sinxinv  \text{če je } ??.
@@ -70,14 +87,17 @@ $L$ ni lokalno kompakten, vendar je zvezna slika lokalno kompaktnega
   %
 % 
 % lastnost 4
-Topološka dimenzija $L$ je enaka~$1$.
+  \item Topološka dimenzija $L$ je enaka~$1$.
+\end{enumerate}
 % konec seznama
 
 
 % 5. naloga:
-Seveda na tem mestu ne moremo pojasniti vseh omenjenih topoloških pojmov.
-Bralcu, ki se želi podučiti, priporočamo učbenika~!!,!!. 
-Še mnogo drugih nenavadnih topološki prostorov pa najdemo v~!!.
+\noindent Seveda na tem mestu ne moremo pojasniti vseh omenjenih topoloških pojmov.
+Bralcu, ki se želi podučiti, priporočamo učbenika \cite{mrcun08,dugindji66}. 
+Še mnogo drugih nenavadnih topološki prostorov pa najdemo v \cite{steen78}.
 
+\bibliographystyle{plain}
+\bibliography{topologija.bib}
 
 \end{document}
