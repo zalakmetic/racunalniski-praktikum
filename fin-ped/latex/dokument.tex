@@ -1,0 +1,83 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper, total={6in, 11.5in}]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[slovene]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\newcommand{\sinxinv}{}
+
+\begin{document}
+\thispagestyle{empty}
+
+% 1. naloga:
+% Varšavski lok
+% Karol Borsuk
+% 20. januar 2026
+
+
+Topologija je matematična veda, ki proučuje pojem \emph{prostor}. Študenti
+matematike v prvem letniku spoznajo ekvlidske, vektorske in metrične prostore. A
+topologi poznajo še veliko drugih prostorov, ki imajo nenavadne lastnosti. Eden takih je
+tudi \emph{varšavski lok}, ki ga definiramo takole.
+
+% 3. naloga: 
+% začetek definicije
+  Varšavski lok $L$ je topološki podprostor ravnine, definiran s predpisom
+  \begin{equation*}
+    L \mathrel{{:}{=}} \left\{ \left(x, \sinxinv \right) \mid x \in (0,1]\} \cup \{(0,0) \right\}.
+  \end{equation*}
+% konec definicije
+
+% 6. naloga: 
+Na sliki~!! vidimo graf funkcije $y = \sinxinv$ na polodprtem intervalu $(0,1]$.
+Če grafu dodamo še izhodišče~$(0,0)$, dobimo varšavki lok.
+% 
+\begin{figure}[ht]
+  \centering
+
+  \label{fig:sin-1-x}
+\end{figure}
+%
+
+Varšavski lok ima naslednje lastnosti:
+% 
+% 4. naloga: 
+% 
+% začetek seznama
+% lastnost 1
+$L$ je povezan prostor, kar pomeni, da ga ne moremo ga razdeliti na disjunktni odprti neprazni množici.
+% 
+% lastnost 2
+$L$ ni s potmi povezan, saj točki $(0,0)$ in $(1, \sin 1)$ nista povezani
+  s potjo. To je, ne obstaja zvezna preslikava $\gamma : [0,1] \to L$, za katero
+  velja $\gamma(0) = (0,0)$ in $\gamma(1) = (1, \sin 1)$.
+% lastnost 3
+$L$ ni lokalno kompakten, vendar je zvezna slika lokalno kompaktnega
+  prostora $\{-1\} \cup (0,1]$ za preslikavo
+  %
+  \begin{align*}
+    f &: \{-1\} \cup (0,1] \to L \\
+    f &: x \mapsto
+    % 2. naloga:
+    %   0         \text{če je } x = -1,
+    %   \sinxinv  \text{če je } ??.
+  \end{align*}
+  %
+% 
+% lastnost 4
+Topološka dimenzija $L$ je enaka~$1$.
+% konec seznama
+
+
+% 5. naloga:
+Seveda na tem mestu ne moremo pojasniti vseh omenjenih topoloških pojmov.
+Bralcu, ki se želi podučiti, priporočamo učbenika~!!,!!. 
+Še mnogo drugih nenavadnih topološki prostorov pa najdemo v~!!.
+
+
+\end{document}
